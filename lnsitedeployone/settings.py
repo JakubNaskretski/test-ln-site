@@ -14,9 +14,12 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MAINAPP_STATIC_ROOT = STATIC_ROOT = os.path.join(STATIC_ROOT, 'mainapp')
+
+TEMPLATE_DIR_MAINAPP = os.path.join(MAINAPP_STATIC_ROOT, 'templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -59,7 +62,7 @@ ROOT_URLCONF = 'lnsitedeployone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR,],
+        'DIRS': [TEMPLATE_DIR_MAINAPP,],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
