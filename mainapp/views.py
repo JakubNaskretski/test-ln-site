@@ -1,6 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+# import the logging library
+import logging
+
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
+
+
 # Create your views here.
 def StronaGlowna(request):
     try:
