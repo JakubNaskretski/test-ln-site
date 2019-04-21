@@ -5,7 +5,7 @@ from django.http import HttpResponse
 def StronaGlowna(request):
     try:
         if request.method == 'GET':
-            return render(request, "appone/StronaGlowna.html")
+            return render(request, "mainapp/StronaGlowna.html")
             # text = """<h1>welcome to my app !</h1>"""
             # return HttpResponse(text)
     except Exception as e:
