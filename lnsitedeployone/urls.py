@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from mainapp import views
 from django.urls import path, include, re_path
+from django.conf.urls.static import static
+from django.conf import settings
 
 app_name = 'mainapp'
 

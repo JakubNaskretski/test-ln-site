@@ -8,7 +8,8 @@
 
     <!-- CSS -->
     <link rel="shortcut icon" type="img/png" href="{% static 'favicon.ico' %}">
-    <link rel="stylesheet" href="{% static "mainapp/css/maincss.css" %}">
+    <link rel="stylesheet" href="{% static "css/maincss.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {% block css %}{% endblock %}
   </head>
 
@@ -17,7 +18,7 @@
             <div class="text-center">
               <div class="mainlogo">
               <a href="{% url 'StronaGlowna' %}">
-                <img src="{%static "mainapp/images/LABNAT-PL-pion.png" %}" class="d-inline-block align-left" alt="Home Pages">
+                <img src="{%static "images/LABNAT-PL-pion.png" %}" class="d-inline-block align-left" alt="Home Pages">
               </a>
               </div>
             </div>
@@ -44,6 +45,6 @@
           {% endblock %}
         </div>
         {% block script %}{% endblock %}
-        <!-- <script src="{%static "mainapp/js/main.js" %}"></script> -->
+        <!-- <script src="{%static "js/main.js" %}"></script> -->
       </body>
     </html>

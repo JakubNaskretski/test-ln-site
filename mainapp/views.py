@@ -25,4 +25,4 @@ def StronaGlowna(request):
 
 
 def Kontakt(request):
-    return render(request, "mainapp/Kontakt.html")
+    return render(request, "Kontakt.html")
