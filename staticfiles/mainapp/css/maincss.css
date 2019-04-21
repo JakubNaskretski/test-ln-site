@@ -1,4 +1,4 @@
-h1, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   text-align: center; /* center all headers */
   color: #333; /* add color to all headers */
 }
@@ -8,10 +8,13 @@ p {
   color: #333; /* add color to all paragraphs */
 }
 
-.MainLogo img {
+.mainlogo img {
   width: 13%; /* add width of the logo */
   margin-top: 15px; /* add some margin */
   margin-bottom: 15px; /* add some margin */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .mainnavbar {
@@ -47,7 +50,7 @@ p {
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-  position: sticky; 
+  position: sticky;
   top: 0;
 }
 

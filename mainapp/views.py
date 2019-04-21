@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 def StronaGlowna(request):
     # try:
     if request.method == 'GET':
-        return render(request, "mainapp/StronaGlowna.html")
+        return render(request, "StronaGlowna.html")
         # text = """<h1>welcome to my app !</h1>"""
         # return HttpResponse(text)
     elif request.method == 'POST':
@@ -22,3 +22,7 @@ def StronaGlowna(request):
     #     logger.error('Something went wrong!')
     #     logger.error(logging.debug)
     #     return HttpResponse("Some problem")
+
+
+def Kontakt(request):
+    return render(request, "mainapp/Kontakt.html")

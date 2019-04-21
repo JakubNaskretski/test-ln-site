@@ -23,4 +23,5 @@ app_name = 'mainapp'
 urlpatterns = [
     path('',  views.StronaGlowna, name='StronaGlowna'),
     path('admin/', admin.site.urls),
+    path('mainapp/',include('mainapp.urls')),
 ]
