@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="shortcut icon" type="img/png" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="{% static "css/maincss.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% block css %}{% endblock %}
+  </head>
+
+  <body>
+    <!-- Logo LN -->
+            <div class="text-center">
+              <div class="mainlogo">
+              <a href="{% url 'StronaGlowna' %}">
+                <img src="{%static "images/LABNAT-PL-pion.png" %}" class="d-inline-block align-left" alt="Home Pages">
+              </a>
+              </div>
+            </div>
+
+    <!-- Navbar -->
+          <div id="mainnavbar" class="mainnavbar" width="auto">
+            <div class="leftmainnavbar">
+                <a href="{% url 'StronaGlowna' %}"><i class="fa fa-fw fa-home"></i>Strona główna</a>
+                <a href="#">O nas</a>
+                <a href="#">Usługi</a>
+                <a href="#">Gotowe rozwiązania</a>
+              <!-- <li><a href="#">Blog</a></li> -->
+                <a class="nava" href="{% url 'mainapp:Kontakt' %}">Kontakt</a>
+            </div>
+            <div id="rightnavbar" class="right">
+                <a class="right" href="https://pl.linkedin.com/company/laboratoria-natury"><i class="fa fa-linkedin-square"></i></a>
+                <a class="right" href=""><i class="fa fa-instagram"></i></a>
+                <a class="right" href=""><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+
+        <div class="mainconteiner">
+          {% block body_block %}
+          {% endblock %}
+        </div>
+        {% block script %}{% endblock %}
+        <!-- <script src="{%static "js/main.js" %}"></script> -->
+      </body>
+    </html>
