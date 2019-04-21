@@ -18,6 +18,8 @@ from django.urls import path
 from mainapp import views
 from django.urls import path, include, re_path
 
+app_name = 'mainapp'
+
 urlpatterns = [
     path('',  views.StronaGlowna, name='StronaGlowna'),
     path('admin/', admin.site.urls),
