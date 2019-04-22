@@ -24,8 +24,9 @@ app_name = 'mainapp'
 
 urlpatterns = [
     path('',  views.StronaGlowna, name='StronaGlowna'),
-    path('admin/', admin.site.urls),
-    path('kontakt/', views.Kontakt, name='Kontakt'),
     path('onas/', views.ONas, name='ONas'),
+    path('uslugi/', views.Uslugi, name='Uslugi'),
+    path('kontakt/', views.Kontakt, name='Kontakt'),
+    path('admin/', admin.site.urls),
     path('mainapp/',include('mainapp.urls')),
 ]

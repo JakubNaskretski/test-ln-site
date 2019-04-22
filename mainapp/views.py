@@ -38,3 +38,13 @@ def ONas(request):
             return HttpResponse(text)
     except Exception as e:
         raise Http404("Something went wrong")
+
+def Uslugi(request):
+    try:
+        if request.method == 'GET':
+            return render(request, "Uslugi.html")
+        elif request.method == 'POST':
+            text = """<h1>Looks like your web browser tried to POST</h1>"""
+            return HttpResponse(text)
+    except Exception as e:
+        raise Http404("Something went wrong")

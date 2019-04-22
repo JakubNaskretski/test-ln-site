@@ -8,10 +8,11 @@
   width: 100%;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* Four images (and also descriptions) beside of each other */
 .column {
+  float: left;
   position: relative;
-  width: 20%;
+  width: 19%;
   padding: 5px;
   text-align: center;
 }
@@ -27,11 +28,6 @@
   clear: both;
   display: table;
 }
-
-/*
-.column:hover {
-  background-color: red;
-} */
 
 .overlay{
   position: absolute;
