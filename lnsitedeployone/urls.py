@@ -26,6 +26,7 @@ urlpatterns = [
     path('',  views.StronaGlowna, name='StronaGlowna'),
     path('onas/', views.ONas, name='ONas'),
     path('uslugi/', views.Uslugi, name='Uslugi'),
+    path('gotowerozwiazania/', views.GotoweRozwiazania, name='GotoweRozwiazania'),
     path('kontakt/', views.Kontakt, name='Kontakt'),
     path('admin/', admin.site.urls),
     path('mainapp/',include('mainapp.urls')),
