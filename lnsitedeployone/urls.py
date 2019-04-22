@@ -26,5 +26,6 @@ urlpatterns = [
     path('',  views.StronaGlowna, name='StronaGlowna'),
     path('admin/', admin.site.urls),
     path('kontakt/', views.Kontakt, name='Kontakt'),
+    path('onas/', views.ONas, name='ONas'),
     path('mainapp/',include('mainapp.urls')),
 ]
