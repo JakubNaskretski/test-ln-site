@@ -12,4 +12,4 @@ urlpatterns = [
     # path('blog/', views.Blog, name='Blog'),
     # path('onas/', views.ONas, name='ONas'),
 #     path('kontakt/', views.Kontakt, name='Kontakt')
-# ]
+]
