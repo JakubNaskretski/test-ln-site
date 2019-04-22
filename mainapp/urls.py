@@ -11,5 +11,5 @@ urlpatterns = [
     # path('gotowerozwiazania/', views.GotoweRozwiazania, name='GotoweRozwiazania'),
     # path('blog/', views.Blog, name='Blog'),
     # path('onas/', views.ONas, name='ONas'),
-    path('kontakt/', views.Kontakt, name='Kontakt')
-]
+#     path('kontakt/', views.Kontakt, name='Kontakt')
+# ]
