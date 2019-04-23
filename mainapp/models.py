@@ -14,7 +14,7 @@ class Product(models.Model):
     product_ingredients = models.CharField(max_length=250)
     product_description = models.CharField(max_length=250)
     product_type = models.ForeignKey(ProductType, on_delete=models.DO_NOTHING)
-    product_image = models.ImageField(upload_to='products')
+    product_image = models.ImageField(upload_to='staticfiles/media/')
 
     def __str__(self):
         return self.product_name

@@ -19,6 +19,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MAINAPP_STATIC_ROOT = os.path.join(STATIC_ROOT, 'mainapp')
 
+MAINAPP_MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
+
 TEMPLATE_DIR_MAINAPP = os.path.join(MAINAPP_STATIC_ROOT, 'templates')
 
 # Quick-start development settings - unsuitable for production
@@ -138,7 +140,7 @@ STATICFILES_DIRS = [
 
 # STATICFILES_DIRS = [MAINAPP_STATIC_ROOT]
 
-# MEDIA_URL = '/products/'
+MEDIA_URL = '/staticfiles/media/'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
