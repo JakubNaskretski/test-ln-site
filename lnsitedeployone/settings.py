@@ -14,12 +14,14 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+# Mainapp under static root
 MAINAPP_STATIC_ROOT = os.path.join(STATIC_ROOT, 'mainapp')
 
-MAINAPP_MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
+
+MEDIA_ROOT = os.path.join(STATIC_ROOT, 'mediafiles')
 
 TEMPLATE_DIR_MAINAPP = os.path.join(MAINAPP_STATIC_ROOT, 'templates')
 
@@ -129,7 +131,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/staticfiles/mainapp/'
-
+MEDIA_URL = '/mediafiles/'
 # added
 
 # # heroku solution
@@ -138,9 +140,13 @@ STATICFILES_DIRS = [
     os.path.join(STATIC_ROOT, 'mainapp')
 ]
 
-# STATICFILES_DIRS = [MAINAPP_STATIC_ROOT]
 
-MEDIA_URL = '/staticfiles/media/'
+# Does it work ?
+# MEDIA_DIRS = [
+#     os.path.join(STATIC_ROOT, 'media')
+# ]
+
+
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())

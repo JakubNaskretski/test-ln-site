@@ -47,20 +47,20 @@ def Uslugi(request):
 
 
 def GotoweRozwiazania(request):
-    # try:
-    funcdrinksprod = Product.objects.filter(product_type='Napoje funkcjonalne')
-    #TODO: czy filtr może się jakoś automatycznie aktualizowac?
-    syrupprod = Product.objects.filter(product_type='Syropy')
     try:
-        if request.method == 'GET':
-            return render(request, "GotoweRozwiazania.html", {'funcdrinksprod':funcdrinksprod, 'syrupprod':syrupprod})
-        elif request.method == 'POST':
-            text = """<h1>Looks like your web browser tried to POST</h1>"""
-            return HttpResponse(text)
+        funcdrinksprod = Product.objects.filter(product_type='Napoje funkcjonalne')
+        #TODO: czy filtr może się jakoś automatycznie aktualizowac?
+        # syrupprod = Product.objects.filter(product_type='Syropy')
+        try:
+            if request.method == 'GET':
+                return render(request, "GotoweRozwiazania.html", {'funcdrinksprod':funcdrinksprod})
+            elif request.method == 'POST':
+                text = """<h1>Looks like your web browser tried to POST</h1>"""
+                return HttpResponse(text)
+        except Exception as e:
+            raise Http404("Something went wrong")
     except Exception as e:
-        raise Http404("Something went wrong")
-    # except Exception as e:
-    #     raise Http404("Couldnt load products from database")
+        raise Http404("Couldnt load products from database")
 
 
 def Kontakt(request):
