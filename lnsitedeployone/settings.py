@@ -149,7 +149,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/staticfiles/mainapp/'
-MEDIA_URL = '/mediafiles/'
+MEDIA_URL = '/statifiles/'
 # added
 
 # # heroku solution
