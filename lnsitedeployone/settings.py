@@ -154,7 +154,7 @@ MEDIA_URL = '/staticfiles/'
 
 # # heroku solution
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfiles'),
     os.path.join(STATIC_ROOT, 'mainapp')
 ]
 
