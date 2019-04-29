@@ -147,9 +147,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-
+# TODO: make sure files are uploaded from static files not from static
 STATIC_URL = '/staticfiles/mainapp/'
-MEDIA_URL = '/staticfiles/'
+# MEDIA_URL = '/static/'
 # added
 
 # # heroku solution
