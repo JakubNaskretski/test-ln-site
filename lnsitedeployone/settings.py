@@ -149,7 +149,7 @@ USE_TZ = True
 
 # TODO: make sure files are uploaded from static files not from static
 STATIC_URL = '/staticfiles/mainapp/'
-# MEDIA_URL = '/static/'
+MEDIA_URL = '/static/'
 # added
 
 # # heroku solution
