@@ -1,8 +1,11 @@
 var i = 0; //startpoint
 var images = [];
 var time = 1000;
+const contentList = document.querySelectorAll('.content__text');
 
-// const contentList = document.querySelectorAll('.content__text');
+function hideElements() {
+  Array.from(contentList).map(item => item.style.display = 'none');
+}
 
 
 // Image list
@@ -12,6 +15,7 @@ images[2] = document.getElementsByClassName("slajd3");
 
 //change image
 function changeImg(){
+  hideElements();
   document.getElementById("images" + i).style.display = "block";
 
   if(i < images.length - 1){
@@ -19,6 +23,7 @@ function changeImg(){
   }else {
     i = 0;
   }
+
 
   setTimeout("changeImg()", time);
 }
