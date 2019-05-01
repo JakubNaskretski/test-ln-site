@@ -3,7 +3,7 @@ var images = [];
 var time = 1000;
 
 // Image list
-images[0] = 'images/SlajdyStronaGlowna/slajd1.jpg';
+images[0].src = '/images/SlajdyStronaGlowna/slajd1.jpg';
 images[1] = 'slajd2.jpg';
 images[2] = 'slajd3.jpg';
 
