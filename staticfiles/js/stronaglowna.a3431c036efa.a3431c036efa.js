@@ -1,6 +1,6 @@
 var i = 0; //startpoint
 var images = [];
-var time = 5000;
+var time = 1000;
 const contentList = document.querySelectorAll('.content__text');
 
 function hideElements() {
