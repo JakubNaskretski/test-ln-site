@@ -12,7 +12,7 @@ images[2] = document.getElementsByClassName("slajd3");
 
 //change image
 function changeImg(){
-  document.getElementById(images[i]).style.display = "block";
+  document.getElementById("images" + i]).style.display = "block";
 
   if(i < images.length - 1){
     i++;
