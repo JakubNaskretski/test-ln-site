@@ -1,5 +1,10 @@
 .slideimages img{
-  transition: 1s;
+  transition: 4s;
+  width: auto;
+  height: 800;
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 
