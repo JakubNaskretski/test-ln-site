@@ -9,7 +9,7 @@ images[2] = 'slajd3.jpg';
 
 //change image
 function changeImg(){
-  document.getElementById("slides").src = images [i];
+  document..getElementById("slides").src = images [i];
 
   if(i < images.length - 1){
     i++;
