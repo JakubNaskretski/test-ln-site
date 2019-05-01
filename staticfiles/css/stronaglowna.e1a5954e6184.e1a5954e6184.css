@@ -1,6 +1,6 @@
 .slideimages img {
-  transition: opacity 2s;
-  width: 800px;
+  transition: opacity 2s; 
+  width: 800;
   height: auto;
   display: none;
   margin-left: auto;
