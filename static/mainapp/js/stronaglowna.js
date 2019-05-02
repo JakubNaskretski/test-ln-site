@@ -1,7 +1,8 @@
 var i = 0; //startpoint
-var images = [];
+// var images = [];
 var time = 5000;
 const contentList = document.querySelectorAll('.content__text');
+var imagesArray = Array.from(contentList);
 
 // function hideElements() {
 //   Array.from(contentList).map(item => item.style.display = 'none');
@@ -15,17 +16,23 @@ const contentList = document.querySelectorAll('.content__text');
 
 //change image
 function changeImg(){
-  // hideElements();
-  document.getElementById("images" + i).style.opacity = "1";
-
-  if(i < images.length - 1){
-    i++;
-  }else {
-    i = 0;
-  }
-
-
-  setTimeout("changeImg()", time);
+  document.getElementById("images" + i).className = "fadeIn";
+  // fading image
+  setTimeout(function() {
+    document.getElementById("images" + i).className = "fadeOut";
+  },2000);
+  // if(i < images.length - 1){
+  //   i++;
+  // }else {
+  //   i = 0;
+  // }
+  i ++;
+  if (i == imgArray.length) { i = 0; }
+    setTimeout(changeImg, time);
 }
+//   setTimeout("changeImg()", time);
+// }
+
+changeImg();
 
 window.onload = changeImg;
