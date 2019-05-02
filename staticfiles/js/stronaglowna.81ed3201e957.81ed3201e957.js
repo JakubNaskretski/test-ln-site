@@ -16,7 +16,7 @@ function hideElements() {
 //change image
 function changeImg(){
   hideElements();
-  document.getElementById("images" + i).style.opacity = "1";
+  document.getElementById("images" + i).style.display = "block";
 
   if(i < images.length - 1){
     i++;

@@ -11,6 +11,10 @@
 
 } */
 
+.slideimages {
+  opacity: 0;
+}
+
 #slider {
     opacity:1;
     transition: opacity 1s;
