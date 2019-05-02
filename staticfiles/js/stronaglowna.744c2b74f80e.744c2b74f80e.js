@@ -31,7 +31,7 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 
-function plusSlides(n) {
+function plusSlides(n) => {
 clearInterval(myTimer);
 this.showSLides(slideIndex +=n);
 if (n = -1){
@@ -51,7 +51,7 @@ function currentSlide(n) {
        }
 }
 
-function componentDidMount = () {
+function componentDidMount = () => {
 	this.showSLides(slideIndex);
     myTimer = setInterval(() => {this.plusSlides(1);}, 4000);
    }
