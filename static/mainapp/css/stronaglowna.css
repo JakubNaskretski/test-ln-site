@@ -15,14 +15,22 @@
   opacity: 0;
 }
 
-#slider.fadeIn {
+
+
+.fadeIn {
     opacity:1;
     transition: opacity 1s;
 }
 
+.fadeOut {
+    opacity:0;
+} 
+
+
+/*
 #slider.fadeOut {
     opacity:0;
-}
+} */
 
 /*
 
