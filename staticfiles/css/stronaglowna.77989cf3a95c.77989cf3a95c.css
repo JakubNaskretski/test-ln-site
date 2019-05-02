@@ -1,5 +1,4 @@
-/* css for old slideshow */
-/* .slideimages img {
+.slideimages img {
   transition: opacity 2s;
   width: 800px;
   height: auto;
@@ -9,16 +8,8 @@
   border-style: solid;
   border-width: 5px;
 
-} */
-
-#slider {
-    opacity:1;
-    transition: opacity 1s;
 }
 
-#slider.fadeOut {
-    opacity:0;
-}
 
 /*
 
