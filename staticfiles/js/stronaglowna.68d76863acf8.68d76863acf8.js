@@ -27,7 +27,7 @@ function changeImg(){
   //   i = 0;
   // }
   i ++;
-  if (i == imagesArray.length) { i = 0; }
+  if (i == imgArray.length) { i = 0; }
     setTimeout(changeImg, time);
 }
 //   setTimeout("changeImg()", time);
