@@ -1,8 +1,10 @@
 var slideIndex = 1;
+do {
 showSlides(slideIndex);
 window.onscroll = function() {
   scrollFunction1();
   scrollFunction2();
+}
 }
 
 // Next/previous controls
@@ -45,7 +47,10 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+function repeatShowSlides() {
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 
 function scrollFunction1() {
@@ -59,9 +64,9 @@ function scrollFunction1() {
 function scrollFunction2() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("mySlides").setAttribute(
-    "style","height: 50%; width: 50%; background: center;  margin-left: auto; margin-right: auto; opacity: 0.2");
+    "style","height: 50%; width: 50%; background: center;  margin-left: auto; margin-right: auto;");
   } else {
     document.getElementById("mySlides").setAttribute(
-    "style","display: block; height: 100%; width: 100%; background: center; margin-left: auto; margin-right: auto; opacity: 0.5;");
+    "style","height: 100%; width: 100%; background: center; margin-left: auto; margin-right: auto;");
   }
 }
