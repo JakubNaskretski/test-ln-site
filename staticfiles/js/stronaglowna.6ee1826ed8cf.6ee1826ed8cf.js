@@ -58,10 +58,10 @@ function scrollFunction1() {
 
 function scrollFunction2() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("mySlides").setAttribute(
+    document.getElementById("slideshow-container").setAttribute(
     "style","height: 50%; width: 50%; background: center;  margin-left: auto; margin-right: auto; opacity: 0.2");
   } else {
-    document.getElementById("mySlides").setAttribute(
+    document.getElementById("slideshow-container").setAttribute(
     "style","display: block; height: 100%; width: 100%; background: center; margin-left: auto; margin-right: auto; opacity: 0.5;");
   }
 }
