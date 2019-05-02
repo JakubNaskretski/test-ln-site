@@ -1,6 +1,11 @@
 var slideIndex = 1;
+do {
 showSlides(slideIndex);
-
+window.onscroll = function() {
+  scrollFunction1();
+  scrollFunction2();
+}
+}
 
 // Next/previous controls
 function plusSlides(n) {
@@ -42,5 +47,26 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+function repeatShowSlides() {
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+function scrollFunction1() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("mySlides").style.fontSize = "30px";
+  } else {
+    document.getElementById("mySlides").style.fontSize = "90px";
+  }
+}
+
+function scrollFunction2() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("mySlides").setAttribute(
+    "style","height: 50%; width: 50%; background: center;  margin-left: auto; margin-right: auto;");
+  } else {
+    document.getElementById("mySlides").setAttribute(
+    "style","height: 100%; width: 100%; background: center; margin-left: auto; margin-right: auto;");
+  }
 }
