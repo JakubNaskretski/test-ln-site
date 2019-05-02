@@ -15,7 +15,13 @@ images[1] = document.getElementsByClassName("slajd2");
 images[2] = document.getElementsByClassName("slajd3");
 
 console.log("Hello world!");
-console.log(images[0]);
+
+function changeImg() {
+  document.getElementById("images0").className = "fadeIn";
+    setTimeout(function() {
+    document.getElementById("images0").className = "fadeOut";
+    },1000);
+}
 
 // //change image
 // function changeImg(){
@@ -37,6 +43,6 @@ console.log(images[0]);
 // //   setTimeout("changeImg()", time);
 // // }
 //
-// changeImg();
-//
-// window.onload = changeImg;
+changeImg();
+
+window.onload = changeImg;
