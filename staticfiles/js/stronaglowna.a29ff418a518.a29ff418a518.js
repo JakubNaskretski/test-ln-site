@@ -20,7 +20,7 @@ function changeImg(){
   // fading image
   setTimeout(function() {
     // document.getElementById("images" + i).remove("fadeIn");
-    document.getElementById("images" + i).className.replace("fadeIn","fadeOut");
+    document.getElementById("images" + i).className.replace("fadeOut");
   },2000);
   // if(i < images.length - 1){
   //   i++;
