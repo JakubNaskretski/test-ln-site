@@ -21,6 +21,9 @@ function changeImg() {
     setTimeout(function() {
     document.getElementById("images0").className = "fadeOut";
     },1000);
+    i ++;
+    if (i == 1) { i = 0; }
+    setTimeout(changeImg, time);
 }
 
 // //change image
