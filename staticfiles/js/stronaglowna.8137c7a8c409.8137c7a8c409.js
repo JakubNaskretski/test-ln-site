@@ -3,9 +3,9 @@ var images = [];
 var time = 5000;
 const contentList = document.querySelectorAll('.content__text');
 
-// function hideElements() {
-//   Array.from(contentList).map(item => item.style.display = 'none');
-// }
+function hideElements() {
+  Array.from(contentList).map(item => item.style.display = 'none');
+}
 
 
 // Image list
@@ -15,7 +15,7 @@ const contentList = document.querySelectorAll('.content__text');
 
 //change image
 function changeImg(){
-  // hideElements();
+  hideElements();
   document.getElementById("images" + i).style.opacity = "1";
 
   if(i < images.length - 1){
