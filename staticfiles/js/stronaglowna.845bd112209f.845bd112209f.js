@@ -1,6 +1,6 @@
 var i = 0; //startpoint
 var images = [];
-var time = 100;
+var time = 1000;
 // const contentList = document.querySelectorAll('.content__text');
 // var imagesArray = Array.from(contentList);
 
@@ -20,7 +20,7 @@ function changeImg() {
   document.getElementById("images0").className = "fadeIn";
     setTimeout(function() {
     document.getElementById("images0").className = "fadeOut";
-    },100);
+    },1000);
     i ++;
     if (i == 1) { i = 0; }
     setTimeout(changeImg, time);
