@@ -35,7 +35,7 @@
   background-color: rgba(243, 243, 249,0.6);
   width: auto;
   height: 180px;
-  border: black solid 1px;
+  border-top: black solid 1px;
 }
 
 .middletext {
@@ -50,9 +50,12 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  border-bottom-left-radius: 280px 120px;
+  border-bottom-right-radius: 280px 120px;
   margin-left: 25%;
   margin-right: 25%;
   text-align: center;
+  border-bottom: black solid 1px;
   padding: auto;
   background-color: rgba(243, 243, 249,0.6);
 }
