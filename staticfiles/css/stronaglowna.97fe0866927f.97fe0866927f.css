@@ -23,7 +23,8 @@
   border-radius: 20px;
   width: 300px;
   /* text-align: center; */
-  margin: auto;
+  padding-left: auto;
+  padding-right: auto;
   /* left: 50%; */
   /* right: 50%; */
   /* margin-right: 50%; */
