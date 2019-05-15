@@ -21,8 +21,8 @@
   border-width: 5px;
   border-radius: 20px;
   width: 300px; */
-  margin-bottom: auto;
-  margin-top: auto;
+  top: 50%;
+  bottom: 50%;
   /* text-align: center; */
   /* margin-left: 50%; */
   /* margin-right: 50%; */
