@@ -27,12 +27,19 @@
   transition: 0.4s;
 }
 
-
+/* Background with text */
 .middlebackground {
   background-color: rgba(243, 243, 249,0.6);
   width: auto;
   height: 180px;
   border-top: black solid 1px;
+}
+
+.middlebackgroundborder {
+  border-bottom: black solid 1px;
+  position: absolute;
+  top: 25%;
+  bottom: 0;
 }
 
 .middletext {
@@ -52,8 +59,7 @@
   margin-left: 25%;
   margin-right: 25%;
   text-align: center;
-  border-bottom: black solid 1px;
-  padding: auto;
+  padding-top: 5px;
   background-color: rgba(243, 243, 249,0.6);
 }
 
