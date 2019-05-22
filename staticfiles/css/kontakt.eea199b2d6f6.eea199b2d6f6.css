@@ -1,0 +1,18 @@
+.allcontent h1 {
+  text-align: center;
+}
+
+.allcontent{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.LeftAlignText p {
+  margin: 0;
+  text-align: left;
+}
+
+.LeftAlignText h6 {
+  margin: 0;
+  text-align: left;
+}
