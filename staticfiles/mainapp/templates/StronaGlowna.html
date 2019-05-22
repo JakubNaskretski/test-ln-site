@@ -5,8 +5,7 @@
   {% block css %}<link rel="stylesheet" href="{% static "css/stronaglowna.css" %}">{% endblock %}
 
   {% block body_block %}
-        <h1 text="center">Witaj na nowej stronie LN!</h1>
-        <br>
+  <br>
           <!-- Slideshow container -->
   <div class="slideshow-container" id="slideshow-container">
 
@@ -14,31 +13,31 @@
     <div class="mySlides fade">
       <div class="numbertext">1 / 5</div>
       <img src="{% static "images/SlajdyStronaGlowna/slajdlogistyka.png" %}" style="width:100%">
-      <div class="text"><h1><span>Logistyka</span></h1></div>
+      <div class="slidetext"><h1><span>Logistyka</span></h1></div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 5</div>
       <img src="{% static "images/SlajdyStronaGlowna/slajdprobowki.jpg" %}" style="width:100%">
-      <div class="text"><h1><span>Laboratorium</span></h1></div>
+      <div class="slidetext"><h1><span>Laboratorium</span></h1></div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">3 / 5</div>
       <img src="{% static "images/SlajdyStronaGlowna/slajdprodukcja.png" %}" style="width:100%">
-      <div class="text"><h1><span>Produkcja</span></h1></div>
+      <div class="slidetext"><h1><span>Produkcja</span></h1></div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">4 / 5</div>
       <img src="{% static "images/SlajdyStronaGlowna/slajdrejestracja.png" %}" style="width:100%">
-      <div class="text"><h1><span>Rejestracja</span></h1></div>
+      <div class="slidetext"><h1><span>Rejestracja</span></h1></div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">5 / 5</div>
       <img src="{% static "images/SlajdyStronaGlowna/slajdrnd.png" %}" style="width:100%">
-      <div class="text"><h1><span>R&D</span></h1></div>
+      <div class="slidetext"><h1><span>R&D</span></h1></div>
     </div>
 
     <!-- Next and previous buttons -->
@@ -47,44 +46,85 @@
   </div>
   <br>
 
-  <!-- The dots/circles -->
-  <!-- <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-  </div -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+  <div class="middleTextBorder">
+  <div class="middleText" id="middleText">
+    <div class="leftMiddleText" id="leftMiddleText">
+      <h2>GOTOWE ROZWIĄZANIA</h2>
+      <p>Nasza firma nie tylko stworzy produkt w oparciu o Państwa pomysł. Proponujemy także  gotowe rozwiązania. Jeśli nie mają Państwo jeszcze własnej koncepcji , zachęcamy do zapoznania się z naszą ofertą gotowych formulacji.</p>
+      <a href="#"><b>ZOBACZ WIĘCEJ</b></a>
+    </div>
+    <div class="rightMiddleText" id="rightMiddleText">
+      <h2>O NAS</h2>
+      <p>Jako firma kontraktowa, przygotujemy produkt  dostosowany do Państwa potrzeb. Nasz zespół specjalistów zagwarantuje najwyższą jakość usług. Oferujemy wsparcie w pełnym zakresie, na każdym etapie produkcji: zaczynając od naszego know-how, przez przygotowania i próby produkcyjne, na gotowym produkcie kończąc.</p>
+      <a href="#"><b>ZOBACZ WIĘCEJ</b></a>
+    </div>
+  </div>
+</div>
+
+  <!-- <div class="countersborder"> -->
+  <button onclick="currentScroll();"></button>
+    <div class="counters">
+
+      <div class="row">
+        <div class="column">
+            <h1 id="count1">0</h1>
+            <h1>Lat doświadczenia</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+            <h1 id="count2">0</h1>
+            <h1>Działów kompleksowej obsługi</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+            <h1 id="count3">0</h1>
+            <h1>Sprzedanych produktów</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+            <h1 id="count4">0</h1>
+            <h1>Tygodnie do pierwszej próbki</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bottomDiv">
+      <div class="bottomText">
+        <h1>DLACZEGO WYBRAĆ PRODUKCJĘ<br>KONTRAKTOWĄ LABORATORIA NATURY?</h1>
         <br>
+        <p>– zorientowanie na klienta</p>
         <br>
+        <p>– indywidualne podejście i elastyczność</p>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>– kompleksowa usługa ‘one-stop-shop’</p>
         <br>
+
+        <h1>– 2 TYGODNIE OD ZAPYTANIA DO<br>PIERWSZEJ PRÓBKI PRODUKTOWEJ</h1>
         <br>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br>
-        <br>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br>
-        <br>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br>
-        <br>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br>
-        <br>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br>
-        <br>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>PRODUKCJA KONTRAKTOWA LABORATORIA NATURY<br>– FORMULACJE DOPASOWANE DO TWOICH POTRZEB.</h2>
+        <a href="#"><b>ZOBACZ WIĘCEJ</b></a>
+      </div>
+        <div class="bottomImage">
+          <img src="{% static "images/StronaGlowna/WaterLeavesRigt.png" %}">
+        </div>
+    </div>
+
+
+      <div class="scrollTop">
+        <button onClick="scrollOnTop();">UP</button>
+      </div>
+
+    <!-- </div> -->
+
   {% endblock %}
 
   {% block script %}<script src="{% static 'js/stronaglowna.js' %}"></script>{% endblock %}

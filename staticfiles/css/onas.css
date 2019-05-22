@@ -8,6 +8,8 @@
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .TextSquare{
@@ -19,6 +21,7 @@
 
 h1 {
   color: #333;
+  text-align: center;
 }
 
 p {

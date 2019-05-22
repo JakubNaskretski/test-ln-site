@@ -15,40 +15,56 @@
   </div>
 
     <!-- description  -->
-    <div class="middlebackground"
+    <div class="middlebackground">
       <h4 class="middletext">Poniżej znajdziecie Państwo część z naszych autorsko opracowanych, gotowych rozwiązań do wdrożenia pod własną marką</h4>
-      <div class="middlebackgroundborder"></div>
     </div>
       <div class="productsnavbar" width="auto">
         <ul>
           <li class="li1"><button onclick="chengeElement(0)" data-btn="0">Syropy</button></li>
           <li class="li2"><button onclick="changeElement(1)" data-btn="1">Toniki</button></li>
-          <li class="li3"><button onclick="changeElement(2)" data-btn="2">Trany</button></li>
+          <li class="li3"><button onclick="displayOils()" data-btn="2">Trany</button></li>
           <li class="li4"><button onclick="changeElement(3)" data-btn="3">Shoty</button></li>
-          <li class="li5"><button onclick="changeElement(4)" data-btn="4">Napoje funkcjonalne</button></li>
+          <li class="li5"><button onclick="displayFunctional()" data-btn="4">Napoje funkcjonalne</button></li>
         </ul>
       </div>
 
     <div class="content">
 
     <div class="productsdisplay">
-      <!-- for value in key - from views  -->
-        <div id="funcdrinksdisplay" class="content__text" data-id="4">
-        {% for funcdrinksprod in funcdrinksprod %}
-            <div>
-            <br>
-            {{ funcdrinksprod.product_name }}<br>
-            <img src="{{ funcdrinksprod.product_image.url }}" alt="product_image" height="200px"><br>
-            {{ funcdrinksprod.product_ingredients }}<br>
-            {{ funcdrinksprod.product_description }}<br>
-          </div>
-        {% endfor %}
-        </div>
-    </div>
+      <div class="productsimages">
 
-    <p class="content__text" data-id="1"> Toniki </p>
-    <p class="content__text" data-id="2"> Trany </p>
-    <p class="content__text" data-id="3"> Shoty </p>
+        <!-- <img style="width: 900px" onclick="redontop()" class="box red" id="redbox" src="{% static "images/GotoweRozwiazania/ApetiteBackgroundV1.png" %}" alt="Apetite Image"> -->
+        <!-- <img style="width: 900px" onclick="purpleontop()" class="box purple" id="purplebox" src="{% static "images/GotoweRozwiazania/ChiaBackgroundV2.png" %}" alt="Chia Image"> -->
+
+        <div class="syrupsdisplay" style="display: none">
+        </div>
+
+        <div class="tonicsdisplay" style="display: none">
+
+        </div>
+
+        <div id="oilsdisplay" class="oilsdisplay" style="display: none">
+          <img style="width: 1200px" onclick="redontop(0)" class="box red" id="redbox3" src="{% static "images/GotoweRozwiazania/Oils/Tran1.png" %}" alt="Tran1 Image">
+          <img style="width: 1200px" onclick="blueontop(0)" class="box blue" id="bluebox5" src="{% static "images/GotoweRozwiazania/Functional/Kawa.png" %}" alt="Kawa Image">
+          <img style="width: 1200px" onclick="purpleontop(0)" class="box purple" id="purplebox3" src="{% static "images/GotoweRozwiazania/Oils/Tran2.png" %}" alt="Tran2 Image">
+        </div>
+
+        <div class="shotsdisplay">
+
+        </div>
+
+        <div id="functionaldisplay" class="functionaldisplay" style="display: none">
+          <img style="width: 1000px" onclick="redontop(1)" class="box red" id="redbox5" src="{% static "images/GotoweRozwiazania/Functional/Imbir.png" %}" alt="Imbir Image">
+          <img style="width: 1000px" onclick="blueontop(1)" class="box blue" id="bluebox5" src="{% static "images/GotoweRozwiazania/Functional/Herbata.png" %}" alt="Herbata Image">
+          <img style="width: 1000px" onclick="purpleontop(1)" class="box purple" id="purplebox5" src="{% static "images/GotoweRozwiazania/Functional/Kawa.png" %}" alt="Kawa Image">
+        </div>
+        <!-- <div class="box red" onclick="redontop()" id="redbox"><p>red</p></div> -->
+        <!-- <div class="box purple" onclick="purpleontop()" id="purplebox"><p>purple</p></div> -->
+        <!-- <div class="box blue" onclick="blueontop()" id="bluebox"><p>blue</p></div> -->
+        <!-- <div class="box green" onclick="greenontop()" id="greenbox"><p>green</p></div> -->
+        <!-- <div class="box black" onclick="blackontop()" id="blackbox"><p>black</p></div> -->
+
+      </div>
 
     </div>
     </div>
