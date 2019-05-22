@@ -4,6 +4,12 @@ window.onscroll = function() {
   scrollFunction2();
 }
 
+var i;
+const redbox = document.querySelectorAll(".red");
+const bluebox = document.querySelectorAll(".blue");
+const purplebox = document.querySelectorAll(".purple");
+
+
 // calling function when click display image (for now alert)
 // displayImageOnClick1();
 // displayImageOnClick5();
@@ -26,39 +32,85 @@ function scrollFunction2() {
   }
 }
 
-var clickstatesyrup = 0;
-var clickstatefunctional = 0;
-function displayImageOnClick1() {
+// var clickstatesyrup = 0;
+// var clickstatefunctional = 0;
+// function displayImageOnClick1() {
+//
+//     document.getElementById("btn1").addEventListener("click", function() {
+//
+//   if (clickstatesyrup == 0 && clickstatefunctional == 0) {
+//     // code snippet 1
+//     document.getElementById("syrupsdisplay").style.display = "block";
+//     clickstatesyrup = 1;
+//   } else{
+//     // code snippet 2
+//     document.getElementById("syrupsdisplay").style.display = "none";
+//     clickstatesyrup = 0;
+//   }
+//
+// })};
+//
+// function displayImageOnClick5() {
+//
+//     document.getElementById("btn5").addEventListener("click", function() {
+//
+//   if (clickstatefunctional == 0 && clickstatesyrup == 0) {
+//     // code snippet 1
+//     document.getElementById("funcdrinksdisplay").style.display = "block";
+//     clickstatefunctional = 1;
+//   } else {
+//     // code snippet 2
+//     document.getElementById("funcdrinksdisplay").style.display = "none";
+//     clickstatefunctional = 0;
+//   }
+//
+// })};
 
-    document.getElementById("btn1").addEventListener("click", function() {
 
-  if (clickstatesyrup == 0 && clickstatefunctional == 0) {
-    // code snippet 1
-    document.getElementById("syrupsdisplay").style.display = "block";
-    clickstatesyrup = 1;
-  } else{
-    // code snippet 2
-    document.getElementById("syrupsdisplay").style.display = "none";
-    clickstatesyrup = 0;
-  }
+// Display products images
 
-})};
 
-function displayImageOnClick5() {
+function displayOils(i) {
+    // redbox.style.width += "30%";
+    document.getElementById("oilsdisplay").style.display = "block";
+    document.getElementById("functionaldisplay").style.display = "none";
+    return i = 3;
+}
 
-    document.getElementById("btn5").addEventListener("click", function() {
+function displayFunctional(i) {
+    // redbox.style.width += "30%";
+    document.getElementById("oilsdisplay").style.display = "none";
+    document.getElementById("functionaldisplay").style.display = "block";
+    console.log(bluebox[1]);
+    return i = 1;
+}
 
-  if (clickstatefunctional == 0 && clickstatesyrup == 0) {
-    // code snippet 1
-    document.getElementById("funcdrinksdisplay").style.display = "block";
-    clickstatefunctional = 1;
-  } else {
-    // code snippet 2
-    document.getElementById("funcdrinksdisplay").style.display = "none";
-    clickstatefunctional = 0;
-  }
+// product images
+var redinex = 10;
+var purpleindex = 20;
+var blueindex = 30;
+var greeenindex = 40;
+var blackindex = 50;
 
-})};
+function redontop(i) {
+    redbox[i].style.zIndex = "30";
+    bluebox[i].style.zIndex = "20";
+    purplebox[i].style.zIndex = "10";
+}
+
+function purpleontop(i) {
+    redbox[i].style.zIndex = "10";
+    bluebox[i].style.zIndex = "20";
+    purplebox[i].style.zIndex = "30";
+}
+
+function blueontop(i) {
+    redbox[i].style.zIndex = "10";
+    bluebox[i].style.zIndex = "30";
+    purplebox[i].style.zIndex = "20";
+}
+
+
 //
 // safety copy of one solution
 // function displayImageOnClick5() {
