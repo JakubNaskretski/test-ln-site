@@ -48,14 +48,15 @@ def Uslugi(request):
 
 
 def GotoweRozwiazania(request):
-    try:
-        if request.method == 'GET':
-            return render(request, "GotoweRozwiazania.html")
-        elif request.method == 'POST':
-            text = """<h1>Looks like your web browser tried to POST</h1>"""
-            return HttpResponse(text)
-    except Exception as e:
-        raise Http404("Something went wrong")
+    return render(request, "GotoweRozwiazania.html")
+    # try:
+    #     if request.method == 'GET':
+    #         return render(request, "GotoweRozwiazania.html")
+    #     elif request.method == 'POST':
+    #         text = """<h1>Looks like your web browser tried to POST</h1>"""
+    #         return HttpResponse(text)
+    # except Exception as e:
+    #     raise Http404("Something went wrong")
 
 
 def Kontakt(request):
