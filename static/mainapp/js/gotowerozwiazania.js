@@ -70,19 +70,16 @@ function scrollFunction2() {
 // Display products images
 
 
-function displayOils(i) {
+function displayOils() {
     // redbox.style.width += "30%";
     document.getElementById("oilsdisplay").style.display = "block";
     document.getElementById("functionaldisplay").style.display = "none";
-    return i = 3;
 }
 
-function displayFunctional(i) {
+function displayFunctional() {
     // redbox.style.width += "30%";
     document.getElementById("oilsdisplay").style.display = "none";
     document.getElementById("functionaldisplay").style.display = "block";
-    console.log(bluebox[1]);
-    return i = 1;
 }
 
 // product images
