@@ -1,8 +1,4 @@
-/* body {
-  height: 1250px;
-  overflow: auto; /* Hide overflow */
-
-
+/* Background image */
 .background {
   background-image: url("/static/mainapp/images/ONas/LeavesWater.jpg");
   background-size: 120%;
@@ -12,6 +8,7 @@
   padding-left: 15px;
 }
 
+/* Main text on image */
 .TextSquare{
   border-radius: 25px;
   background-color: rgba(246, 245, 245, 0.9);
@@ -28,5 +25,4 @@ p {
   text-align: left;
   padding-left: 200px;
   padding-right: 200px;
-
 }

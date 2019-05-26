@@ -8,14 +8,7 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-/* .mainconteiner {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-} */
-
-.mainlogo img {
+.toplogo img {
   width: 13%; /* add width of the logo */
   margin-top: 15px; /* add some margin */
   margin-bottom: 15px; /* add some margin */

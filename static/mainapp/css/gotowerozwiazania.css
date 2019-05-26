@@ -5,9 +5,6 @@
 }
 
 .box {
-	/* float: left; */
-	/* width: 100px; */
-	/* height: 100px; */
 	width: 30%;
 	padding: 30px;
 	cursor: pointer;
@@ -18,18 +15,18 @@
 
 .red {
 	/* position: absolute; */
-  margin-left: 10%;
+  margin-left: 5%;
 	cursor: pointer;
   z-index: 10;
 }
 .blue {
   /* margin-left: 50%; */
-	margin-left: 25%;
+	margin-left: 20%;
   z-index: 20;
 }
 .purple {
 	/* position: relative; */
-	margin-left: 40%;
+	margin-left:35%;
 	z-index: 30;
 }
 .green {
@@ -43,16 +40,6 @@
   /* z-index: 30; */
 }
 
-
-.productsimages {
-	/* content: "";
-	clear: both;
-	display: table; */
-}
-
-.productsdisplay{
-}
-
 .topbackgroundwrap {
   width: 100%;
   height: 100%;
@@ -63,9 +50,9 @@
 
 }
 
-.center {
+.backgroundText {
   position: absolute;
-  font-size: 90px;
+  font-size: 70px;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);

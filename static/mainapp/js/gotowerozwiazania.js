@@ -16,9 +16,9 @@ const purplebox = document.querySelectorAll(".purple");
 
 function scrollFunction1() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("center").style.fontSize = "30px";
+    document.getElementById("backgroundText").style.fontSize = "30px";
   } else {
-    document.getElementById("center").style.fontSize = "90px";
+    document.getElementById("backgroundText").style.fontSize = "70px";
   }
 }
 

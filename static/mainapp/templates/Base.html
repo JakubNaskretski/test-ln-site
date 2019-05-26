@@ -3,6 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Place to put webpage title -->
     <title>{% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -11,13 +12,14 @@
     <link rel="stylesheet" href="{% static "css/maincss.css" %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Place to put own css for webpage -->
     {% block css %}{% endblock %}
   </head>
 
   <body>
     <!-- Logo LN -->
             <div class="text-center">
-              <div class="mainlogo">
+              <div class="toplogo">
               <a href="{% url 'StronaGlowna' %}">
                 <img src="{%static "images/LABNAT-PL-pion.png" %}" alt="LN Logo">
               </a>
@@ -26,14 +28,15 @@
 
     <!-- Navbar -->
           <div id="mainnavbar" class="mainnavbar" width="auto">
+            <!-- Navbar items aligned to the left -->
             <div class="leftmainnavbar">
                 <a href="{% url 'StronaGlowna' %}"><i class="fa fa-fw fa-home"></i>Strona główna</a>
                 <a href="{% url 'ONas' %}">O nas</a>
                 <a href="{% url 'Uslugi' %}">Usługi</a>
                 <a href="{% url 'GotoweRozwiazania' %}">Gotowe rozwiązania</a>
-              <!-- <li><a href="#">Blog</a></li> -->
                 <a href="{% url 'Kontakt' %}">Kontakt</a>
             </div>
+            <!-- Navbar items aligned to the right -->
             <div id="rightnavbar" class="right">
                 <a class="right" href="https://pl.linkedin.com/company/laboratoria-natury"><i class="fa fa-linkedin-square"></i></a>
                 <a class="right" href=""><i class="fa fa-instagram"></i></a>
@@ -41,11 +44,12 @@
             </div>
           </div>
 
+        <!-- Main contener if for some reason needed to style evey webpage from single css -->
         <div class="mainconteiner">
           {% block body_block %}
           {% endblock %}
         </div>
+        <!-- Place to put own js for webpage -->
         {% block script %}{% endblock %}
-        <!-- <script src="{%static "js/main.js" %}"></script> -->
       </body>
     </html>
